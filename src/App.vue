@@ -1,14 +1,14 @@
 <script>
 export default {
-  onLaunch: function () {
-    console.log('App Launch')
+  onLaunch() {
+    if (import.meta.env.DEV) console.log('App Launch')
   },
-  onShow: function () {
-    console.log('App Show')
+  onShow() {
+    if (import.meta.env.DEV) console.log('App Show')
   },
-  onHide: function () {
-    console.log('App Hide')
-  },
+  onHide() {
+    if (import.meta.env.DEV) console.log('App Hide')
+  }
 }
 </script>
 
